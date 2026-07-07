@@ -4,6 +4,7 @@
 # ===========================================================================
 
 baseURL = "https://antonin-biernacki.github.io/personal-website-template/"
+canonifyURLs = true
 locale = "en"
 title = "Your Name"
 
