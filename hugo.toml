@@ -1,0 +1,30 @@
+# ===========================================================================
+# Hugo configuration file
+# Replace the placeholder values below with your own.
+# ===========================================================================
+
+baseURL = ""
+locale = "en"
+title = "Your Name"
+
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  description = "Personal website of Your Name, researcher at Your Institution."
+  email = "your.name@example.com"
+
+[permalinks]
+  [permalinks.page]
+    news = "/news/:slug/"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
