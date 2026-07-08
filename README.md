@@ -79,6 +79,16 @@ Markdown is a lightweight markup language used for the site content. Here are th
 - **Blockquotes**: Use `>` at the beginning of a paragraph.
 - **Code**: Use backticks (`` ` ``) for inline code or triple backticks (`` ``` ``) for code blocks.
 
+To add accordion:
+```html
+<details>
+    <summary>Title</summary>
+    <div class="details-body">
+        Content
+    </div>
+</details>
+```
+
 For more details, see the [Markdown Guide](https://www.markdownguide.org/basic-syntax/).
 
 ---
