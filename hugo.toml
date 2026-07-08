@@ -3,7 +3,7 @@
 # Replace the placeholder values below with your own.
 # ===========================================================================
 
-baseURL = "https://antonin-biernacki.github.io/personal-website-template/"
+baseURL = "https://your-gitlab-account-name.github.io"
 canonifyURLs = true
 locale = "en"
 title = "Your Name"

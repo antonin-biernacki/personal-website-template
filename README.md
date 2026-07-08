@@ -6,6 +6,7 @@ The website is built with **Hugo** and can be hosted on any static hosting provi
 
 ## Table of contents
 
+- [Set and and deploy on GitHub](#set-and-and-deploy-on-github)
 - [How to update content](#how-to-update-content)
   - [How to add or modify content items](#how-to-add-or-modify-content-items)
   - [How to modify pages](#how-to-modify-pages)
@@ -17,6 +18,15 @@ The website is built with **Hugo** and can be hosted on any static hosting provi
   - [Fetching your publications from HAL](#fetching-your-publications-from-hal)
 
 ---
+
+## Set and and deploy on GitHub
+
+Go on [GitHub](https://github.com/) create a new public repository. The name this repository need to be this one
+`your-gitlab-account-name.github.io`.
+This repository add all files of this web site on it.
+Open the hugo.toml file and modify the baseURL as indicated.
+To pubish your website on Internet go the repository settings then in the Pages section.
+Change the source from `Deploy from a branch` to `GitHub Action`.
 
 ## How to update content
 
@@ -88,7 +98,7 @@ The website will be available at: http://localhost:1313
 ```text
 .
 ├── content/
-│   ├── _index.md               Home page
+│   ├── _index.md                Home page
 │   ├── links.md                 Links page (profiles, resources, contact)
 │   ├── teaching.md              Teaching page (plain prose)
 │   ├── publications/            Collection: publications
@@ -120,6 +130,8 @@ The website will be available at: http://localhost:1313
 │       └── videos/                 Videos (e.g. an optional home page presentation video)
 │
 ├── hugo.toml                    Hugo configuration file
+├── .github/workflows
+│   └── /hugo.yml                   GitHub Pages configuration file
 └── .gitignore                   Excludes build artifacts (public/, resources/, .hugo_build.lock)
 ```
 
